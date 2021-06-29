@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="imagem/png" href="../img/icone.png" />
+    <script src="js.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+    <title>Dalvanir viera</title>
+    <script>
+     function dark(){
+     var color = document.getElementById("dark");
+     var back =document.getElementById("color");
+     var proj = document.getElementById("proj");
+     var letra = document.getElementById("letra");
+     var proj1 = document.getElementById("proj1");
+     var proj2 = document.getElementById("proj2");
+     var link1 = document.getElementById("link1");
+     var link2 = document.getElementById("link2");
+     var link3 = document.getElementById("link3");
+     if(color.style.color == "white"){
+        color.style.color = "black";
+        color.className = "fa fa-toggle-on";
+        back.style.background = "#363636";
+        proj.style.backgroundColor="grey";
+        proj1.style.backgroundColor="grey";
+        proj2.style.backgroundColor="grey";
+        letra.style.color ="white";
+        link1.style.color = "white";
+        link2.style.color = "white";
+        link3.style.color = "white";
+
+        
+     }else{
+        color.style.color = "white";
+        color.className = "fa fa-toggle-off";
+        back.style.background = "#fff"
+        proj.style.backgroundColor="white";
+        proj1.style.backgroundColor="white";
+        proj2.style.backgroundColor="white";
+        letra.style.color ="black";
+        link1.style.color = "red";
+        link2.style.color = "red";
+        link3.style.color = "red";
+
+     }
+ }
+    </script>
+    <style>
+      *{
+    margin: 0;padding: 0;
+}
+.font1{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 100%;
+
+
+}
+header i{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: white;
+    
+    
+}
+.a{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#dark{
+    font-size: 30px;
+}
+#dark:hover{
+    color: black;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    background: url("banner.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+main{
+    width: 100%;
+    height: 100%;
+   
+
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(68, 68, 68);
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+.redes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+.redes i{
+    margin: 10px;
+    color: white;
+}
+.redes i:hover{
+color: green;
+}
+footer a{
+    color: white;
+
+}
+footer a:hover{
+    color: green;
+}
+.Cprojetos{
+    width: 70%;
+    height: 250px;
+    margin: auto;
+    max-width: 500px;
+    border: solid 1px inherit;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 5px 10px 15px 5px #000000; 
+    box-shadow: 5px 10px 15px 5px #000000;
+}
+.projetos{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.slide{
+    width: 100%;
+    height: auto;
+    overflow-y:hidden;
+    display: flex;
+    max-width: 1200px;
+    max-height: 500px;
+    margin-top: 10px;
+}
+.slide img{
+    width: 85%;
+
+    
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+.slide img:nth-child(3){
+    margin-right: 10px;
+}
+
+a{
+    outline: none;
+    color: red;
+}
+@media  screen and (min-width: 1200px) {
+ .slide{
+     overflow-y: unset;
+     width: 100%;
+     max-width: none;
+     height: auto;
+     margin-right: auto;
+     margin-left: auto;
+ }
+ .slide img{
+     width: 33%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+}
+
+    </style>
+</head>
+<body id="color">
+    <header>
+        <i class="fa fa-toggle-off" aria-hidden="true" id="dark" onclick="dark()" style="color: white;"></i>
+        <div class="banner">
+                
+            <div class="a font1">
+           <h2>Dalvanir Viera da Silva</h2>
+           <h3>Analise e desenvolvimento de sistemas</h3> 
+         </div>
+          
+          </div>
+    </header>
+    <main >
+      <div class="slide">
+        <img src="dra.jpeg" alt="">  <img src="zeroum.jpeg" alt=""> <img src="eng.jpeg" alt="">
+        </div>
+       <div class="projetos font1" id="letra">
+         <h3 class="font1">Projetos</h3>
+        
+         <div class="Cprojetos font1" id="proj">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <br>
+          <p>Project name</p><br>
+          <p>Descrição do projeto</p>
+          <br>
+          <a href="#" id="link1" >link</a>
+         </div>
+         <div class="Cprojetos" id="proj1">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <br>
+          <p>Project name</p><br>
+          <p>Descrição do projeto</p><br>
+          <a href="#" id="link2" >link</a>
+         </div>
+         <div class="Cprojetos" id="proj2">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <br>
+          <p>Project name</p><br>
+          <p>Descrição do projeto</p>
+          <br>
+          <a href="#" id="link3" >link</a>
+        </div>
+       </div>
+       
+    <footer>
+        <h1 class="font1">Contato</h1>
+        <div class="redes" id="contato">
+        <a href="https://www.linkedin.com/in/dalvanir-viera-da-silva-7715a5191"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+           
+           
+        </div>
+        <div class="font3">
+          <a href="mailto:eeep.dalvani.vieira@gmail.com"><i class="fa fa-share" aria-hidden="true">eeep.dalvani.vieira@gmail.com</i></a> 
+          <br><a href="https://api.whatsapp.com/send?phone=5511964265637"
+          target="_blank"><i class="fa fa-whatsapp" aria-hidden="true">11 964265637</i></a>
+       </div>
+      </footer>
+</body>
+</html>
